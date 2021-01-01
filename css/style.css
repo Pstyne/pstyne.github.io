@@ -1,0 +1,214 @@
+/*===========================
+ Base Styles
+ ===========================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'GillSans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*------ Relative Container ------*/
+
+.relative {
+  position: relative;
+}
+
+/*------ Container ------*/
+
+.container {
+  padding: 0 1em;
+}
+
+/*------ Navigation ------*/
+
+header {
+  background-color: rgb(114, 173, 250);
+}
+
+/*------ Menu ------*/
+
+.menu {
+  text-align: center;
+  display: none;
+}
+
+.menu li {
+  background-color: #9d36c3;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding: .5em 0;
+  color: #fff;
+}
+
+.menu-button {
+  width: 2em;
+  height: 2em;
+  margin-top: 2.55em;
+  border: 3px solid #9d36c3;
+  border-radius: 3px;
+  float: right;
+}
+
+.top-line, .middle-line, .bottom-line {
+  position: absolute;
+  left: 3px;
+  width: 1.25em;
+  height: 2px;
+  background-color: #9d36c3;
+}
+
+.top-line {
+  top: 5px;
+}
+
+.middle-line {
+  top: 12px;
+}
+
+.bottom-line {
+  bottom: 5px;
+}
+
+/* If menu is clicked add this class */
+
+.opened {
+  display: block;
+}
+
+/*------ Footer ------*/
+
+footer {
+  background-color: rgb(114, 173, 250);
+  text-align: center;
+  margin-top: 1em;
+  padding: .15em;
+}
+
+/*------ Clearfix ------*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*================================
+Main Section and Related Content
+=================================*/
+
+/*------ Columns ------*/
+
+.left-col, .right-col {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/*------ Paragraphs ------*/
+
+p {
+  line-height: 2em;
+  letter-spacing: .1em;
+}
+
+/*------ Images (not logo) ------*/
+
+.image {
+  width: 100%;
+}
+
+.relative .image, .member-info {
+  border-radius: 0 0 5px 5px;
+}
+
+.member-info p {
+  line-height: 1em;
+}
+
+.member-info {
+  position: absolute;
+  bottom: 4px;
+  background-color: rgba(114, 173, 250, .8);
+  padding: 0 4px;
+}
+
+/*------ Form ------*/
+
+form input, textarea {
+  width: 100%;
+  margin-bottom: .5em;
+  border: 1px solid #888; 
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+button {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: rgba(114, 173, 250, .8);
+  border-radius: 5px;
+  color: #333;
+}
+
+/*===========================
+ Media Queries
+ ===========================*/
+
+@media screen and (min-width: 769px) {
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  .menu li {
+    margin: 1em;
+    border-radius: 5px;
+  }
+
+  .menu li a {
+    color: #fff;
+    padding: 5px 10px;
+  }
+
+  .menu, .menu li {
+    display: inline-block;
+    margin-top: 1.25em;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .left-col {
+    float: left;
+  }
+  
+  .right-col {
+    float: right;
+  }
+  
+  [class$="col"], [class$="col relative"] {
+    width: 49%;
+  }
+}

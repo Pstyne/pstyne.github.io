@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Colonel's Kids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="clearfix"> <!-- Site Navigation Start-->
+          <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a> <!-- Logo -->
+          <div class="menu-button relative"> <!-- Responsive Navigation Handling -->
+            <div class="top-line"></div>
+            <div class="middle-line"></div>
+            <div class="bottom-line"></div>
+          </div>                             <!-- Responsive Navigation Handling -->
+          <ul class="menu">
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#whoWeAre">Who we are</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+          </ul>
+        </nav> <!-- Site Navigation End-->
+      </div>
+    </header>
+
+    <main class="container"> <!-- Main Content Start -->
+      <section id="mission"> <!-- Mission Statement Section Start-->
+        <h1>Mission</h1>
+        <p>
+          The mission of Colonel's Kids is to help in crimes against children 
+          and to prevent crimes from being commited against children.
+        </p>
+        <img 
+          srcset="images/kids_jumping.jpg" 
+          class="image"  
+          alt="kids jumping"
+          >
+        <p>
+          All children deserve a memorable childhood. 
+          Memories they develop that they can then share with their children 
+          someday and pave the way to guiding and caring for their own. 
+          Unfortunately, many children suffer from the opposite of that 
+          childhood. Living lives that are unimaginable. Help us, 
+          help the wonderful children.
+        </p>
+      </section> <!-- Mission Statement Section End-->
+
+      <hr>
+  
+      <article class="clearfix" id="whoWeAre"> <!-- About Section Start -->
+        <h1>Who we are</h1>
+        <p>
+          We are Colonels Kids. A non-profit organization based in Fayetteville, West Virginia. 
+          For some time, we have put forth much effort in stopping and 
+          preventing crimes against children. We are also a family and we 
+          take wholeness of a family seriously.
+        </p>
+        <div class="left-col relative">
+          <img 
+            srcset="
+              images/jim_pack_xsm.jpg 350w,
+              images/jim_pack_sm.jpg 500w,
+              images/jim_pack_lg.jpg 1000w
+              " 
+            src="images/jim_pack_sm.jpg"
+            class="image" 
+            alt="jim pack"
+            />
+          <div class="member-info">
+            <h2>Tim Pack, President</h2>
+            <p>
+              Tim Pack is the president of Colonels Kids. 
+              Making it a top priority that the organizations needs are met and 
+              making sure children are given top priority in the mission to stop
+              crimes against children.
+            </p>
+          </div>
+        </div>
+        <div class="right-col relative">
+          <img 
+            src="images/teresa_pack_sm.jpg"
+            srcset="
+              images/teresa_pack_xsm.jpg 350w,
+              images/teresa_pack_sm.jpg 500w,
+              images/teresa_pack_lg.jpg 1000w
+              "
+            class="image" 
+            alt="teresa pack"
+            />
+          <div class="member-info">
+            <h2>Teresa Pack, Secretary Treasurer</h2>
+            <p>
+              Teresa Pack is the secretary treasurer of Colonels Kids. 
+              She keeps track of the organizations finances and makes sure 
+              that the top priority of the organization is met and keeping 
+              financial balance in the organization.
+            </p>
+          </div>
+        </div>
+      </article> <!-- About Section End -->
+
+      <hr>
+  
+      <section id="contactUs" class="clearfix"> <!-- Contact Section Start -->
+        <h1>Contact Us</h1>
+        <div class="left-col">
+          <p>
+            We would love to hear from you! 
+            Contact us if you would like more information 
+            about what we do or if you would like to volunteer or donate!
+          </p>
+        </div>
+        
+        <div class="right-col">
+          <!-- Contact Form -->
+          <form action="/contact" method="post">
+            <label for="name">Name</label><br>
+            <input type="text"  name="name" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+  
+      </section><!-- Contact Section End -->
+    </main> <!-- Main Content End -->
+
+    <footer>
+      <p>&copy; 2020 Colonels Kids Inc.</p>
+    </footer>
+    <script src="js/menuButton.js"></script> <!-- Script for menu button on smaller screens -->
+    <script src="js/form.js"></script> <!-- Simple form validation script -->
+  </body>
+</html>
